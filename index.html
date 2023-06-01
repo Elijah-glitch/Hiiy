@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vehicle Selling Page</title>
+  <style>
+    /* CSS styling for the vehicle display */
+    .vehicle {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .vehicle-details {
+      margin: 10px;
+      width: 400px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .vehicle-images {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    
+    .vehicle-image {
+      max-width: 100%;
+      height: auto;
+      margin: 5px;
+    }
+    
+    .vehicle-title {
+      font-weight: bold;
+      margin-top: 5px;
+    }
+    
+    .vehicle-description {
+      margin-top: 5px;
+    }
+    
+    .vehicle-price {
+      margin-top: 5px;
+    }
+    
+    .buy-button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Vehicle Selling Page</h1>
+
+  <div class="vehicle">
+    <div class="vehicle-details">
+      <div class="vehicle-images">
+        <img src="vehicle1_1.jpg" alt="Vehicle 1 Image 1" class="vehicle-image">
+        <img src="vehicle1_2.jpg" alt="Vehicle 1 Image 2" class="vehicle-image">
+        <img src="vehicle1_3.jpg" alt="Vehicle 1 Image 3" class="vehicle-image">
+      </div>
+      <div class="vehicle-title">Vehicle 1</div>
+      <div class="vehicle-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+      <div class="vehicle-price">$19,999</div>
+      <button class="buy-button" onclick="buyVehicle('Vehicle 1')">Buy Now</button>
+    </div>
+  
+    <div class="vehicle-details">
+      <div class="vehicle-images">
+        <img src="vehicle2_1.jpg" alt="Vehicle 2 Image 1" class="vehicle-image">
+        <img src="vehicle2_2.jpg" alt="Vehicle 2 Image 2" class="vehicle-image">
+      </div>
+      <div class="vehicle-title">Vehicle 2</div>
+      <div class="vehicle-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+      <div class="vehicle-price">$24,999</div>
+      <button class="buy-button" onclick="buyVehicle('Vehicle 2')">Buy Now</button>
+    </div>
+  
+    <!-- Add more vehicle details here -->
+  </div>
+
+  <script>
+    function buyVehicle(vehicleName) {
+      // Customize this function to handle the vehicle purchase logic
+      alert('Thank you for buying ' + vehicleName + '!');
+    }
+  </script>
+</body>
+</html>
